@@ -66,10 +66,10 @@ require('functies/functies.php');
 				<div class="content">
 					<div class="inner">
 						<h2>ranglijst een spel</h2>
-						<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.</p>
-						<ul class="actions">
-							<li><a href="generic.html" class="button">Learn more</a></li>
-						</ul>
+						<form method="GET" action="ranglijsten.php">
+							<input type="hidden" value="1Spel" name="value">
+							<button id="submit" type="submit">een spel</button>
+						</form>
 					</div>
 				</div>
 			</section>
@@ -78,10 +78,10 @@ require('functies/functies.php');
 				<div class="content">
 					<div class="inner">
 						<h2>dagelijkse ranglijst</h2>
-						<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.</p>
-						<ul class="actions">
-							<li><a href="generic.html" class="button">Learn more</a></li>
-						</ul>
+						<form method="GET" action="ranglijsten.php">
+							<input type="hidden" value="dagLijst" name="value">
+							<button id="submit" type="submit">een spel</button>
+						</form>
 					</div>
 				</div>
 			</section>
@@ -90,10 +90,10 @@ require('functies/functies.php');
 				<div class="content">
 					<div class="inner">
 						<h2>algemeene ranglijst</h2>
-						<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.</p>
-						<ul class="actions">
-							<li><a href="generic.html" class="button">Learn more</a></li>
-						</ul>
+						<form method="GET" action="ranglijsten.php">
+							<input type="hidden" value="algemeenLijst" name="value">
+							<button id="submit" type="submit">een spel</button>
+						</form>
 					</div>
 				</div>
 			</section>
