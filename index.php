@@ -79,7 +79,7 @@ require('functies/functies.php');
 						<h2>dagelijkse ranglijst</h2>
 						<section>
 						<form method="GET" action="ranglijsten.php">
-							<input id="date-time-text" type="datetime-local" name="datum">
+							<input id="date-time-text" type="date" name="datum">
 							<input type="hidden" value="dagLijst" name="value">
 							<button id="submit" type="submit" href="ranglijsten.php">een spel</button>
 						</form>
