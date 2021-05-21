@@ -184,5 +184,8 @@ function getAll(){
         $row["speler_aantal_punten"].
         "</td>";}
 }
-
+function addPlayer(){
+    $mysqli = db_connect();
+    
+}
 
