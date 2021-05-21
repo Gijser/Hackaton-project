@@ -32,7 +32,6 @@ function getTopTen(){
     $db = "lanparty";
     
     $conn = mysqli_connect($dbhost, $dbuser, $dbpass, $db);
-    $query = mysqli_connect();
 
     $query = "SELECT * FROM speler ORDER BY speler_aantal_punten DESC LIMIT 10";
 
