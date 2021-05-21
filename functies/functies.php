@@ -54,17 +54,38 @@ function getEenSpel(){
     
     $conn = mysqli_connect($dbhost, $dbuser, $dbpass, $db);
 
-    $query = "";
+    $query = "SELECT ";
 
     $sql = mysqli_query($conn, $query);
-
-    while($sql->num_rows > 0)
 		echo "
 		<th>
 			<tr>
-	
+                Game
+			</tr>
+            <tr>
+                speler
+			</tr>
+            <tr>
+                punten
+			</tr>
+            <tr>
+                Datum
 			</tr>
 		</th>";
+        while($sql->num_rows > 0){
+        echo"
+        <th>
+
+        </th>
+        <th>
+
+        </th>
+        <th>
+
+        </th>
+        <th>
+
+        </th>";}
 }
 
 function getEenDag(){
