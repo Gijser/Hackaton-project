@@ -184,5 +184,10 @@ function getAll(){
         $row["speler_aantal_punten"].
         "</td>";}
 }
-
+if(isset($_POST['submitPlayer'])){
+    $naam = $_POST['addPlayer'];
+    $mysqli = db_connect();
+    $mysqli->query("INSERT INTO speler (speler_naam) VALUES('$naam')");
+    header('location: ../index.php');
+}
 
