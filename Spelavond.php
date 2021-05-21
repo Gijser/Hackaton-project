@@ -13,7 +13,7 @@
     <body>
         <section>
         <div>
-            <from action="functies/functies.php" method="POST">
+            <from action="index.php" method="POST">
                 <div class="inputRow">
                     <label for="Spel">Spel:</label>
                     <input type="text" name="Spel">
@@ -23,7 +23,7 @@
                     <input type="date" name="Datum">
                 </div>
                 <div class="inputRow">
-                	<button class="btn" type="submit" name="submitPotje">Voeg potje toe</button>
+                	<button class="btn" type="submit" name="submitPotje" href="#">Voeg potje toe</button>
             	</div>
             </from>
             </div>
