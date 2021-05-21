@@ -31,7 +31,6 @@ require('functies/functies.php');
 				<ul>
 					<li><a href="#intro">welkom</a></li>
 					<li><a href="#one">ranglijsten</a></li>
-					<li><a href="#two">top 10 spelers</a></li>
 					<li><a href="#three">zoekbalk</a></li>
 				</ul>
 			</nav>
@@ -44,9 +43,8 @@ require('functies/functies.php');
 		<!-- Intro -->
 		<section id="intro" class="wrapper style1 fullscreen fade-up">
 			<div class="inner">
-				<h1>Hyperspace</h1>
-				<p>Just another fine responsive site template designed by <a href="http://html5up.net">HTML5 UP</a><br />
-					and released for free under the <a href="http://html5up.net/license">Creative Commons</a>.</p>
+				<h1>Covadis LanParty Leaderboards</h1>
+				<p>Hier kunt u de verschillende leaderboards vinden van de afgelopen toernooien</a>.</p>
 				<ul class="actions">
 					<li><a href="#one" class="button scrolly">Learn more</a></li>
 				</ul>
@@ -68,7 +66,7 @@ require('functies/functies.php');
 						<h2>ranglijst een spel</h2>
 						<form method="GET" action="ranglijsten.php">
 							<input type="hidden" value="1Spel" name="value">
-							<button id="submit" type="submit">een spel</button>
+							<button id="submit" type="submit" href="ranglijsten.php">een spel</button>
 						</form>
 					</div>
 				</div>
@@ -80,7 +78,7 @@ require('functies/functies.php');
 						<h2>dagelijkse ranglijst</h2>
 						<form method="GET" action="ranglijsten.php">
 							<input type="hidden" value="dagLijst" name="value">
-							<button id="submit" type="submit">een spel</button>
+							<button id="submit" type="submit" href="ranglijsten.php">een spel</button>
 						</form>
 					</div>
 				</div>
@@ -92,23 +90,13 @@ require('functies/functies.php');
 						<h2>algemeene ranglijst</h2>
 						<form method="GET" action="ranglijsten.php">
 							<input type="hidden" value="algemeenLijst" name="value">
-							<button id="submit" type="submit">een spel</button>
+							<button id="submit" type="submit" href="ranglijsten.php">een spel</button>
 						</form>
 					</div>
 				</div>
 			</section>
 		</section>
-					</php>
-					<section id="two" class="wrapper style1 fade-up">
-					<div>
-						<?php
-						echo getTopTen();
-						?>
-					</div>
-					</section>
-				</div>
-			</div>
-		</section>
+			
 
 		<!-- Three -->
 		<section id="three" class="wrapper style1 fade-up">
