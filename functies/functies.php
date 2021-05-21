@@ -68,10 +68,10 @@ function getEenSpel()
     while ($sql1->num_rows > 0) {
         $query2 = "SELECT pot_id, game_naam, speler_naam, speler_aantal_punten, DateTime FROM potje, speler 
     WHERE pot_id = '$aantal'
-    ORDER BY speler_aantal_punten DESC AND DateTime DESC";
-    
-    $aantal++;
-    break;
+    ORDER BY speler_aantal_punten DESC, DateTime DESC";
+
+        $aantal++;
+        break;
     };
 
     $sql2 = mysqli_query($conn, $query2);
@@ -108,6 +108,7 @@ function getEenSpel()
                 $row["pot_datum"] .
                 "</td>";
         }
+       
     }
 }
 
@@ -157,48 +158,37 @@ function getEenDag()
     }
 }
 
+<<<<<<< HEAD
+=======
 function getAll()
 {
+
     $dbhost = "localhost";
     $dbuser = "root";
     $dbpass = "";
     $db = "lanparty";
 
     $conn = mysqli_connect($dbhost, $dbuser, $dbpass, $db);
-
-    $aantal = 0;
-
-    $query = "SELECT pot_id, game_naam, speler_naam, speler_aantal_punten, DateTime FROM potje, speler 
-    WHERE pot_id = '$aantal'
-    ORDER BY speler_aantal_punten DESC, DateTime DESC";
-
+    $query = "SELECT speler_naam, speler_aantal_punten FROM speler";
     $sql = mysqli_query($conn, $query);
 
-    echo "
-		<th>
-            <tr>
-                speler
-			</tr>
-            <tr>
-                punten
-			</tr>
-		</th>";
-
-    while ($row = $sql->fetch_assoc()) {
-        echo "
-        <td>" .
-            $row["speler_naam"] .
-            "</td>
-        <td>" .
-            $row["speler_aantal_punten"] .
-            "</td>";
+    if ($sql->num_rows > 0) {
+        echo "<table id='sort'><tr><th>Speler Naam</th><th>Speler Punten</th></tr>";
+        while ($row = $sql->fetch_assoc()) {
+            echo "<tr><td>" . $row["speler_naam"] . "</td>
+            <td>" . $row["speler_aantal_punten"] . "</td>";
+        }
+        echo "</table>";
+    } else {
+        echo "0 results";
     }
 }
+>>>>>>> 701a605610ba182aad691e060bebf5a7a98c3449
 function addPlayer()
 {
     $mysqli = db_connect();
 }
-if(isset($_POST['submitPlayer'])){
+if (isset($_POST['submitPlayer'])) {
     $naam = $_POST['addPlayer'];
     $mysqli = db_connect();
     $mysqli->query("INSERT INTO speler (speler_naam) VALUES('$naam')");
