@@ -1,6 +1,5 @@
 <?php
 require('functies/functies.php');
-
 ?>
 
 <!DOCTYPE HTML>
@@ -161,11 +160,13 @@ require('functies/functies.php');
 					</section>
 
 					</php>
+					<section id="three" class="wrapper style1 fade-up">
 					<div>
 						<?php
 						echo getTopTen();
 						?>
 					</div>
+					</section>
 				</div>
 			</div>
 		</section>
