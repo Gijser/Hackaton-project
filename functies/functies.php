@@ -158,32 +158,6 @@ function getEenDag()
     }
 }
 
-<<<<<<< HEAD
-=======
-function getAll()
-{
-
-    $dbhost = "localhost";
-    $dbuser = "root";
-    $dbpass = "";
-    $db = "lanparty";
-
-    $conn = mysqli_connect($dbhost, $dbuser, $dbpass, $db);
-    $query = "SELECT speler_naam, speler_aantal_punten FROM speler";
-    $sql = mysqli_query($conn, $query);
-
-    if ($sql->num_rows > 0) {
-        echo "<table id='sort'><tr><th>Speler Naam</th><th>Speler Punten</th></tr>";
-        while ($row = $sql->fetch_assoc()) {
-            echo "<tr><td>" . $row["speler_naam"] . "</td>
-            <td>" . $row["speler_aantal_punten"] . "</td>";
-        }
-        echo "</table>";
-    } else {
-        echo "0 results";
-    }
-}
->>>>>>> 701a605610ba182aad691e060bebf5a7a98c3449
 function addPlayer()
 {
     $mysqli = db_connect();
