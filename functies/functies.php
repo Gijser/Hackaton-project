@@ -191,17 +191,12 @@ if (isset($_POST['submitPlayer'])) {
     $mysqli->query("INSERT INTO speler (speler_naam) VALUES('$naam')");
     header('location: ../index.php');
 }
-<<<<<<< HEAD
-=======
 if(isset($_POST['submitGame'])){
     $naam = $_POST['addGame'];
     $mysqli = db_connect();
     $mysqli->query("INSERT INTO game (game_naam) VALUES('$naam')");
     header('location: ../index.php');
 }
-<<<<<<< HEAD
->>>>>>> d7c7116d4c075c8988dd79883f0d1b3b7da19acc
-=======
 
 if(isset($_POST['submitPotje'])){
     $spel = $_POST['Spel'];
@@ -234,4 +229,3 @@ if(isset($_POST['Voeg_speler_toe'])){
     }
 
 }
->>>>>>> d7a2510fc3ceb3d50dceb376bb5cf2980a5c1c0b
