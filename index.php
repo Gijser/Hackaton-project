@@ -100,14 +100,65 @@ require('functies/functies.php');
 			</section>
 		</section>
 
-		<!-- Two -->
-		<section id="two" class="wrapper style3 fade-up">
-			<div class="inner">
-				<div id="list-title">
-					<h2>top 10 spelers</h2>
-				</div>
-				<div id="top-10-spelers-lijst">
-					<php>
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Intro -->
+					<section id="intro" class="wrapper style1 fullscreen fade-up">
+						<div class="inner">
+							<h1>Hyperspace</h1>
+							<p>Just another fine responsive site template designed by <a href="http://html5up.net">HTML5 UP</a><br />
+							and released for free under the <a href="http://html5up.net/license">Creative Commons</a>.</p>
+							<ul class="actions">
+								<li><a href="#one" class="button scrolly">Learn more</a></li>
+							</ul>
+						</div>
+					</section>
+				<!-- Leaderboard -->
+
+				<?php
+				leaderboard();
+				?>
+
+				<!-- One -->
+					<section id="one" class="wrapper style2 spotlights">
+						<section>
+							<a href="#" class="image"><img src="images/pic01.jpg" alt="" data-position="center center" /></a>
+							<div class="content">
+								<div class="inner">
+									<h2>ranglijst een spel</h2>
+									<form method="GET" action="ranglijsten.html">
+										<input type="hidden" name="value" value="1Spel">
+										<button type="submit" href="ranglijsten.html">naar lijst</button>
+									</form>
+								</div>
+							</div>
+						</section>
+						<section>
+							<a href="#" class="image"><img src="images/pic02.jpg" alt="" data-position="top center" /></a>
+							<div class="content">
+								<div class="inner">
+									<h2>dagelijkse ranglijst</h2>
+									<form method="GET" action="ranglijsten.html">
+										<input type="hidden" name="value" value="dagLijst">
+										<button type="submit" href="ranglijsten.html">naar lijst</button>
+									</form>
+								</div>
+							</div>
+						</section>
+						<section>
+							<a href="#" class="image"><img src="images/pic03.jpg" alt="" data-position="25% 25%" /></a>
+							<div class="content">
+								<div class="inner">
+									<h2>algemeene ranglijst</h2>
+									<form method="GET" action="ranglijsten.html">
+										<input type="hidden" name="value" value="algemeenLijst">
+										<button type="submit" href="ranglijsten.html">naar lijst</button>
+									</form>
+								</div>
+							</div>
+						</section>
+					</section>
 
 					</php>
 					<div>
