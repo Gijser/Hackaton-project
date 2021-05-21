@@ -31,7 +31,6 @@ require('functies/functies.php');
 				<ul>
 					<li><a href="#intro">welkom</a></li>
 					<li><a href="#one">ranglijsten</a></li>
-					<li><a href="#two">top 10 spelers</a></li>
 					<li><a href="#three">zoekbalk</a></li>
 				</ul>
 			</nav>
@@ -44,9 +43,8 @@ require('functies/functies.php');
 		<!-- Intro -->
 		<section id="intro" class="wrapper style1 fullscreen fade-up">
 			<div class="inner">
-				<h1>Hyperspace</h1>
-				<p>Just another fine responsive site template designed by <a href="http://html5up.net">HTML5 UP</a><br />
-					and released for free under the <a href="http://html5up.net/license">Creative Commons</a>.</p>
+				<h1>Covadis LanParty Leaderboards</h1>
+				<p>Hier kunt u de verschillende leaderboards vinden van de afgelopen toernooien</a>.</p>
 				<ul class="actions">
 					<li><a href="#one" class="button scrolly">Learn more</a></li>
 				</ul>
@@ -66,9 +64,9 @@ require('functies/functies.php');
 				<div class="content">
 					<div class="inner">
 						<h2>ranglijst een spel</h2>
-						<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.</p>
+						<p>Hier vindt u per spel de ranglijst</p>
 						<ul class="actions">
-							<li><a href="generic.html" class="button">Learn more</a></li>
+							<li><a href="ranglijsten.php" class="button">Learn more</a></li>
 						</ul>
 					</div>
 				</div>
@@ -78,9 +76,9 @@ require('functies/functies.php');
 				<div class="content">
 					<div class="inner">
 						<h2>dagelijkse ranglijst</h2>
-						<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.</p>
+						<p>hier vindt u per potje de ranglijst</p>
 						<ul class="actions">
-							<li><a href="generic.html" class="button">Learn more</a></li>
+							<li><a href="ranglijsten.php" class="button">Learn more</a></li>
 						</ul>
 					</div>
 				</div>
@@ -90,25 +88,15 @@ require('functies/functies.php');
 				<div class="content">
 					<div class="inner">
 						<h2>algemeene ranglijst</h2>
-						<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.</p>
+						<p>hier vindt u alle informatie over de spelers</p>
 						<ul class="actions">
-							<li><a href="generic.html" class="button">Learn more</a></li>
+							<li><a href="ranglijsten.php" class="button">Learn more</a></li>
 						</ul>
 					</div>
 				</div>
 			</section>
 		</section>
-					</php>
-					<section id="two" class="wrapper style1 fade-up">
-					<div>
-						<?php
-						echo getTopTen();
-						?>
-					</div>
-					</section>
-				</div>
-			</div>
-		</section>
+			
 
 		<!-- Three -->
 		<section id="three" class="wrapper style1 fade-up">
