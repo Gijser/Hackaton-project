@@ -1,3 +1,8 @@
+<?php
+require('functies/functies.php');
+
+?>
+
 <!DOCTYPE HTML>
 <!--
 	Hyperspace by HTML5 UP
@@ -42,6 +47,11 @@
 							</ul>
 						</div>
 					</section>
+				<!-- Leaderboard -->
+
+				<?php
+				leaderboard();
+				?>
 
 				<!-- One -->
 					<section id="one" class="wrapper style2 spotlights">

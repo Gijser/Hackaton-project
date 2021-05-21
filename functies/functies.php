@@ -1,5 +1,5 @@
 <?php
-
+require('database.php');
 
 
 function leaderboard(){
@@ -10,6 +10,17 @@ function leaderboard(){
     $db = "lanparty";
     
     $conn = mysqli_connect($dbhost, $dbuser, $dbpass, $db);
-    $query = mysqli_connect()
+    $query = "SELECT speler_naam, speler_punten FROM speler";
+    $sql = mysqli_query($conn, $query);
 
+    if ($sql->num_rows > 0) {
+        echo "<table><tr><th>Speler Naam</th><th>Speler Punten</th></tr>";
+        while ($row = $sql->fetch_assoc()){
+            echo "<tr><td>" . $row["speler_naam"] . "</td>
+            <td>" . $row["speler_punten"] . "</td>";
+        }
+        echo "</table>";
+    } else{
+        echo "0 results";
+    }
 }
