@@ -1,5 +1,6 @@
 <?php
 require('functies/functies.php');
+
 ?>
 
 <!DOCTYPE HTML>
