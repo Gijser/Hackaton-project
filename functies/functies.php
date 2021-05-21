@@ -2,7 +2,6 @@
 require('database.php');
 
 
-
 function leaderboard(){
 
     $dbhost = "localhost";
@@ -15,8 +14,7 @@ function leaderboard(){
     $sql = mysqli_query($conn, $query);
 
     if ($sql->num_rows > 0) {
-        echo "<table id='sort'><tr><th>
-        Speler Naam</th><th>Speler Punten</th></tr>";
+        echo "<table id='sort'><tr><th>Speler Naam</th><th>Speler Punten</th></tr>";
         while ($row = $sql->fetch_assoc()){
             echo "<tr><td>" . $row["speler_naam"] . "</td>
             <td>" . $row["speler_aantal_punten"] . "</td>";
@@ -40,8 +38,10 @@ function getTopTen(){
     $sql = mysqli_query($conn, $query);
 
     while ($row = $sql->fetch_assoc()) {
+        echo "<table id='sort'><tr><th>Speler Naam</th><th>Speler Punten</th></tr>";
         echo "<tr><td>" . $row["speler_naam"] . "</td>
         <td>" . $row["speler_aantal_punten"] . " </td>";
+        echo "</table>";
     }
 }
 
@@ -53,17 +53,38 @@ function getEenSpel(){
     
     $conn = mysqli_connect($dbhost, $dbuser, $dbpass, $db);
 
-    $query = "";
+    $query = "SELECT ";
 
     $sql = mysqli_query($conn, $query);
-
-    while($sql->num_rows > 0)
 		echo "
 		<th>
 			<tr>
-	
+                Game
+			</tr>
+            <tr>
+                speler
+			</tr>
+            <tr>
+                punten
+			</tr>
+            <tr>
+                Datum
 			</tr>
 		</th>";
+        while($sql->num_rows > 0){
+        echo"
+        <th>
+
+        </th>
+        <th>
+
+        </th>
+        <th>
+
+        </th>
+        <th>
+
+        </th>";}
 }
 
 function getEenDag(){

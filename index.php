@@ -69,7 +69,7 @@ require('functies/functies.php');
 						<h2>ranglijst een spel</h2>
 						<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.</p>
 						<ul class="actions">
-							<li><a href="ranglijsten.php" class="button">Learn more</a></li>
+							<li><a href="generic.html" class="button">Learn more</a></li>
 						</ul>
 					</div>
 				</div>
@@ -81,7 +81,7 @@ require('functies/functies.php');
 						<h2>dagelijkse ranglijst</h2>
 						<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.</p>
 						<ul class="actions">
-							<li><a href="ranglijsten.php" class="button">Learn more</a></li>
+							<li><a href="generic.html" class="button">Learn more</a></li>
 						</ul>
 					</div>
 				</div>
@@ -93,79 +93,20 @@ require('functies/functies.php');
 						<h2>algemeene ranglijst</h2>
 						<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.</p>
 						<ul class="actions">
-							<li><a href="ranglijsten.php" class="button">Learn more</a></li>
+							<li><a href="generic.html" class="button">Learn more</a></li>
 						</ul>
 					</div>
 				</div>
 			</section>
 		</section>
-
-		<!-- Wrapper -->
-			<div id="wrapper">
-
-				<!-- Intro -->
-					<section id="intro" class="wrapper style1 fullscreen fade-up">
-						<div class="inner">
-							<h1>Hyperspace</h1>
-							<p>Just another fine responsive site template designed by <a href="http://html5up.net">HTML5 UP</a><br />
-							and released for free under the <a href="http://html5up.net/license">Creative Commons</a>.</p>
-							<ul class="actions">
-								<li><a href="#one" class="button scrolly">Learn more</a></li>
-							</ul>
-						</div>
-					</section>
-				<!-- Leaderboard -->
-
-				<?php
-				leaderboard();
-				?>
-
-				<!-- One -->
-					<section id="one" class="wrapper style2 spotlights">
-						<section>
-							<a href="#" class="image"><img src="images/pic01.jpg" alt="" data-position="center center" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>ranglijst een spel</h2>
-									<form method="GET" action="ranglijsten.php">
-										<input type="hidden" name="value" value="1Spel">
-										<button type="submit" href="ranglijsten.php">naar lijst</button>
-									</form>
-								</div>
-							</div>
-						</section>
-						<section>
-							<a href="#" class="image"><img src="images/pic02.jpg" alt="" data-position="top center" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>dagelijkse ranglijst</h2>
-									<form method="GET" action="ranglijsten.php">
-										<input type="hidden" name="value" value="dagLijst">
-										<button type="submit" href="ranglijsten.php">naar lijst</button>
-									</form>
-								</div>
-							</div>
-						</section>
-						<section>
-							<a href="#" class="image"><img src="images/pic03.jpg" alt="" data-position="25% 25%" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>algemeene ranglijst</h2>
-									<form method="GET" action="ranglijsten.php">
-										<input type="hidden" name="value" value="algemeenLijst">
-										<button type="submit" href="ranglijsten.php">naar lijst</button>
-									</form>
-								</div>
-							</div>
-						</section>
-					</section>
-
 					</php>
+					<section id="two" class="wrapper style1 fade-up">
 					<div>
 						<?php
 						echo getTopTen();
 						?>
 					</div>
+					</section>
 				</div>
 			</div>
 		</section>
@@ -174,7 +115,6 @@ require('functies/functies.php');
 		<section id="three" class="wrapper style1 fade-up">
 			<div class="inner">
 				<h2>zoekbalk</h2>
-				<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.</p>
 				<div class="split style1">
 					<section>
 						<form method="post" action="#">
