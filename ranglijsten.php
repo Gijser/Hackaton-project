@@ -70,11 +70,6 @@ require("functies/functies.php");
 				</table>
 			</div>
 		</section>
-		<section>
-			<form method="POST" action="ranglijsten.php">
-				<input type="datetime-local" name="datum">
-				<button>submit</button>
-			</form>
 		</section>
 	</div>
 
