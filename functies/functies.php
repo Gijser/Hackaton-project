@@ -68,7 +68,7 @@ function getEenSpel()
     while ($sql1->num_rows > 0) {
         $query2 = "SELECT pot_id, game_naam, speler_naam, speler_aantal_punten, DateTime FROM potje, speler 
     WHERE pot_id = '$aantal'
-    ORDER BY speler_aantal_punten DESC AND DateTime DESC";
+    ORDER BY speler_aantal_punten DESC, DateTime DESC";
     
     $aantal++;
     break;
