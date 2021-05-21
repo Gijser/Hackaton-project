@@ -65,10 +65,10 @@ require('functies/functies.php');
 				<div class="content">
 					<div class="inner">
 						<h2>ranglijst een spel</h2>
-						<p>Hier vindt u per spel de ranglijst</p>
-						<ul class="actions">
-							<li><a href="ranglijsten.php" class="button">Learn more</a></li>
-						</ul>
+						<form method="GET" action="ranglijsten.php">
+							<input type="hidden" value="1Spel" name="value">
+							<button id="submit" type="submit" href="ranglijsten.php">een spel</button>
+						</form>
 					</div>
 				</div>
 			</section>
@@ -77,10 +77,10 @@ require('functies/functies.php');
 				<div class="content">
 					<div class="inner">
 						<h2>dagelijkse ranglijst</h2>
-						<p>hier vindt u per potje de ranglijst</p>
-						<ul class="actions">
-							<li><a href="ranglijsten.php" class="button">Learn more</a></li>
-						</ul>
+						<form method="GET" action="ranglijsten.php">
+							<input type="hidden" value="dagLijst" name="value">
+							<button id="submit" type="submit" href="ranglijsten.php">een spel</button>
+						</form>
 					</div>
 				</div>
 			</section>
@@ -89,10 +89,10 @@ require('functies/functies.php');
 				<div class="content">
 					<div class="inner">
 						<h2>algemeene ranglijst</h2>
-						<p>hier vindt u alle informatie over de spelers</p>
-						<ul class="actions">
-							<li><a href="ranglijsten.php" class="button">Learn more</a></li>
-						</ul>
+						<form method="GET" action="ranglijsten.php">
+							<input type="hidden" value="algemeenLijst" name="value">
+							<button id="submit" type="submit" href="ranglijsten.php">een spel</button>
+						</form>
 					</div>
 				</div>
 			</section>
