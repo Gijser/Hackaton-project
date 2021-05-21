@@ -66,9 +66,9 @@ function getEenSpel()
     $aantal = 0;
 
     while ($sql1->num_rows > 0) {
-        $query2 = "SELECT pot_id, game_naam, speler_naam, speler_aantal_punten, pot_datum FROM potje, speler 
+        $query2 = "SELECT pot_id, game_naam, speler_naam, speler_aantal_punten, DateTime FROM potje, speler 
     WHERE pot_id = '$aantal'
-    ORDER BY speler_aantal_punten DESC AND pot_datum DESC";
+    ORDER BY speler_aantal_punten DESC AND DateTime DESC";
     
     $aantal++;
     break;
@@ -168,9 +168,9 @@ function getAll()
 
     $aantal = 0;
 
-    $query = "SELECT pot_id, game_naam, speler_naam, speler_aantal_punten, pot_datum FROM potje, speler 
+    $query = "SELECT pot_id, game_naam, speler_naam, speler_aantal_punten, DateTime FROM potje, speler 
     WHERE pot_id = '$aantal'
-    ORDER BY speler_aantal_punten DESC, pot_datum DESC";
+    ORDER BY speler_aantal_punten DESC, DateTime DESC";
 
     $sql = mysqli_query($conn, $query);
 
