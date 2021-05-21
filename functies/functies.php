@@ -1,6 +1,6 @@
 <?php
 require('database.php');
-require_once ('/src_elo/Elo.php');
+
 
 
 function leaderboard(){
