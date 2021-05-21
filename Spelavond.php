@@ -10,7 +10,7 @@
         $Speler = $_POST['Speler'];
         $data = db_getData("SELECT speler_naam FROM speler WHERE speler_naam = '$Speler'");
         if($data -> num_rows < 1){
-            echo'Speler niet gevonden';
+            echo'Speler niet gevonden';           
         }else{
             echo 'Speler toegevoegd';
             $_SESSION['punten'] =  $punten;
