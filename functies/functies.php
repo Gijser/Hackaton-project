@@ -199,4 +199,39 @@ if(isset($_POST['submitGame'])){
     $mysqli->query("INSERT INTO game (game_naam) VALUES('$naam')");
     header('location: ../index.php');
 }
+<<<<<<< HEAD
 >>>>>>> d7c7116d4c075c8988dd79883f0d1b3b7da19acc
+=======
+
+if(isset($_POST['submitPotje'])){
+    $spel = $_POST['Spel'];
+    $date = $_POST['Datum'];
+    $mysqli = db_connect();
+    $data = db_getData("SELECT game_naam FROM game WHERE game_naam = '$spel'");
+    if($data -> num_rows < 1){
+        echo'Game niet gevonden';
+        header('location: ../Spelavond.php');           
+    }else{
+        echo 'Game toegevoegd';
+        $mysqli = db_connect();
+        $mysqli->query("INSERT INTO potje (game_naam, pot_datum) VALUES('$spel, $date')");
+        header('location: ../Spelavond.php');
+    }
+    
+}
+
+if(isset($_POST['Voeg_speler_toe'])){
+    $Speler = $_POST['Speler'];
+    $data = db_getData("SELECT speler_naam FROM speler WHERE speler_naam = '$Speler'");
+    if($data -> num_rows < 1){
+        echo'Speler niet gevonden';    
+        header('location: ../Spelavond.php');       
+    }else{
+        echo 'Speler toegevoegd';
+        $mysqli = db_connect();
+        $mysqli->query("INSERT INTO game (game_naam) VALUES('$Speler')");
+        header('location: ../Spelavond.php');
+    }
+
+}
+>>>>>>> d7a2510fc3ceb3d50dceb376bb5cf2980a5c1c0b

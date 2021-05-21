@@ -56,14 +56,12 @@ require("functies/functies.php");
 			<div class="inner">
 				<table>
 					<?php
-
-
 					if ($_GET["value"] == "1Spel") {
 						getEenSpel();
 					} elseif ($_GET["value"] == "dagLijst") {
 						getEenDag();
 					} elseif ($_GET["value"] == "algemeenLijst") {
-						getAll();
+						leaderboard();
 					}
 					?>
 
