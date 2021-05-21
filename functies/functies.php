@@ -210,3 +210,35 @@ if(isset($_POST['submitGame'])){
     $mysqli->query("INSERT INTO game (game_naam) VALUES('$naam')");
     header('location: ../index.php');
 }
+
+if(isset($_POST['submitPotje'])){
+    $spel = $_POST['Spel'];
+    $date = $_POST['Datum'];
+    $mysqli = db_connect();
+    $data = db_getData("SELECT game_naam FROM game WHERE game_naam = '$spel'");
+    if($data -> num_rows < 1){
+        echo'Game niet gevonden';
+        header('location: ../Spelavond.php');           
+    }else{
+        echo 'Game toegevoegd';
+        $mysqli = db_connect();
+        $mysqli->query("INSERT INTO potje (game_naam, pot_datum) VALUES('$spel, $date')");
+        header('location: ../Spelavond.php');
+    }
+    
+}
+
+if(isset($_POST['Voeg_speler_toe'])){
+    $Speler = $_POST['Speler'];
+    $data = db_getData("SELECT speler_naam FROM speler WHERE speler_naam = '$Speler'");
+    if($data -> num_rows < 1){
+        echo'Speler niet gevonden';    
+        header('location: ../Spelavond.php');       
+    }else{
+        echo 'Speler toegevoegd';
+        $mysqli = db_connect();
+        $mysqli->query("INSERT INTO game (game_naam) VALUES('$Speler')");
+        header('location: ../Spelavond.php');
+    }
+
+}
