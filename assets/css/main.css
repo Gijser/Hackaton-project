@@ -32,6 +32,21 @@ body {
 	line-height: 1;
 }
 
+#top-10-spelers-lijst{
+	display: flex;
+	justify-content: center;
+}
+
+#list-title{
+	display: flex;
+	justify-content: center;
+	height: 50px;
+}
+
+li{
+	list-style-type: none;
+}
+
 ol, ul {
 	list-style: none;
 }
