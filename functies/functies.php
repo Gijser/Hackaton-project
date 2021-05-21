@@ -1,6 +1,6 @@
 <?php
 require('database.php');
-require_once ('/src_elo/Elo.php');
+//
 
 
 function leaderboard(){
@@ -15,8 +15,7 @@ function leaderboard(){
     $sql = mysqli_query($conn, $query);
 
     if ($sql->num_rows > 0) {
-        echo "<table id='sort'><tr><th>
-        Speler Naam</th><th>Speler Punten</th></tr>";
+        echo "<table id='sort'><tr><th>Speler Naam</th><th>Speler Punten</th></tr>";
         while ($row = $sql->fetch_assoc()){
             echo "<tr><td>" . $row["speler_naam"] . "</td>
             <td>" . $row["speler_aantal_punten"] . "</td>";
@@ -40,8 +39,10 @@ function getTopTen(){
     $sql = mysqli_query($conn, $query);
 
     while ($row = $sql->fetch_assoc()) {
+        echo "<table id='sort'><tr><th>Speler Naam</th><th>Speler Punten</th></tr>";
         echo "<tr><td>" . $row["speler_naam"] . "</td>
         <td>" . $row["speler_aantal_punten"] . " </td>";
+        echo "</table>";
     }
 }
 
