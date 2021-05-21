@@ -44,7 +44,7 @@ require('functies/functies.php');
 		<!-- Intro -->
 		<section id="intro" class="wrapper style1 fullscreen fade-up">
 			<div class="inner">
-				<h1>Covadis LanParty Leaderboards</h1>
+				<h1>Covadis Lanparty leaderboards</h1>
 				<p>Hier kunt u de verschillende leaderboards vinden van de afgelopen toernooien</a>.</p>
 				<ul class="actions">
 					<li><a href="#one" class="button scrolly">Learn more</a></li>
@@ -79,7 +79,7 @@ require('functies/functies.php');
 						<h2>dagelijkse ranglijst</h2>
 						<section>
 						<form method="GET" action="ranglijsten.php">
-							<input id="date-time-text" type="date-l" name="datum">
+							<input id="date-time-text" type="date" name="datum">
 							<input type="hidden" value="dagLijst" name="value">
 							<button id="submit" type="submit" href="ranglijsten.php">een spel</button>
 						</form>
@@ -101,7 +101,7 @@ require('functies/functies.php');
 		</section>
 		<section id = "addPlayer" class="wrapper style1 fade-up">
 			<div class="inner">
-			<h2>Voeg niewe player toe</h2>
+			<h2>Voeg nieuwe player toe</h2>
 				<div class="split style1">
 					<section>
 						<form method="post" action="functies/functies.php">
@@ -118,7 +118,7 @@ require('functies/functies.php');
 		</section>
 		<section id = "addPlayer" class="wrapper style1 fade-up">
 			<div class="inner">
-			<h2>Voeg niewe game toe</h2>
+			<h2>Voeg nieuwe game toe</h2>
 				<div class="split style1">
 					<section>
 						<form method="post" action="functies/functies.php">
