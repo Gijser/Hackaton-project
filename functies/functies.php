@@ -157,43 +157,6 @@ function getEenDag()
     }
 }
 
-function getAll()
-{
-    $dbhost = "localhost";
-    $dbuser = "root";
-    $dbpass = "";
-    $db = "lanparty";
-
-    $conn = mysqli_connect($dbhost, $dbuser, $dbpass, $db);
-
-    $aantal = 0;
-
-    $query = "SELECT pot_id, game_naam, speler_naam, speler_aantal_punten, DateTime FROM potje, speler 
-    WHERE pot_id = '$aantal'
-    ORDER BY speler_aantal_punten DESC, DateTime DESC";
-
-    $sql = mysqli_query($conn, $query);
-
-    echo "
-		<th>
-            <tr>
-                speler
-			</tr>
-            <tr>
-                punten
-			</tr>
-		</th>";
-
-    while ($row = $sql->fetch_assoc()) {
-        echo "
-        <td>" .
-            $row["speler_naam"] .
-            "</td>
-        <td>" .
-            $row["speler_aantal_punten"] .
-            "</td>";
-    }
-}
 function addPlayer()
 {
     $mysqli = db_connect();
