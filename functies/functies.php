@@ -120,7 +120,7 @@ function getEenDag()
 
     $conn = mysqli_connect($dbhost, $dbuser, $dbpass, $db);
 
-    $datum = $_POST['datum'];
+    $datum = $_GET['datum'];
 
     $aantal = 0;
 
