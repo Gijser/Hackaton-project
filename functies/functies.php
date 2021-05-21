@@ -126,36 +126,39 @@ function getEenDag()
     $aantal = 0;
 
     $query = "SELECT pot_id, speler_naam, speler_aantal_punten, DateTime FROM potje, speler 
-    WHERE pot_id = '$aantal' AND DateTime = '$datum'
+    WHERE  DateTime = '$datum'
     ORDER BY speler_aantal_punten DESC, DateTime DESC";
 
     $sql = mysqli_query($conn, $query);
 
     echo "
-		<th>
-            <tr>
+    <table>
+		<tr>
+            <th>
                 speler
-			</tr>
-            <tr>
+			</th>
+            <th>
                 punten
-			</tr>
-            <tr>
+			</th>
+            <th>
                 Datum
-			</tr>
-		</th>";
+			</th>
+		</tr>";
 
     while ($row = $sql->fetch_assoc()) {
-        echo "
-        <td>" .
+        echo "<tr>
+            <td>" .
             $row["speler_naam"] .
             "</td>
-        <td>" .
+            <td>" .
             $row["speler_aantal_punten"] .
             "</td>
-        <td>" .
-            $row["pot_datum"] .
-            "</td>";
+            <td>" .
+            $row["DateTime"] .
+            "</td></tr>"
+            ;
     }
+    echo "</table>";
 }
 
 function addPlayer()

@@ -61,25 +61,13 @@ require('functies/functies.php');
 		<!-- One -->
 		<section id="one" class="wrapper style2 spotlights">
 			<section>
-				<a href="#" class="image"><img src="images/pic01.jpg" alt="" data-position="center center" /></a>
-				<div class="content">
-					<div class="inner">
-						<h2>ranglijst een spel</h2>
-						<form method="GET" action="ranglijsten.php">
-							<input type="hidden" value="1Spel" name="value">
-							<button id="submit" type="submit" href="ranglijsten.php">een spel</button>
-						</form>
-					</div>
-				</div>
-			</section>
-			<section>
 				<a href="#" class="image"><img src="images/pic02.jpg" alt="" data-position="top center" /></a>
 				<div class="content">
 					<div class="inner">
 						<h2>dagelijkse ranglijst</h2>
 						<section>
 						<form method="GET" action="ranglijsten.php">
-							<input id="date-time-text" type="date-l" name="datum">
+							<input id="date" type="date" name="datum">
 							<input type="hidden" value="dagLijst" name="value">
 							<button id="submit" type="submit" href="ranglijsten.php">een spel</button>
 						</form>

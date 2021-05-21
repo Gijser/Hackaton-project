@@ -54,7 +54,6 @@ require("functies/functies.php");
 		</section>
 		<section id="main" class="wrapper">
 			<div class="inner">
-				<table>
 					<?php
 					if ($_GET["value"] == "1Spel") {
 						getEenSpel();
@@ -64,8 +63,6 @@ require("functies/functies.php");
 						leaderboard();
 					}
 					?>
-
-				</table>
 			</div>
 		</section>
 		</section>
