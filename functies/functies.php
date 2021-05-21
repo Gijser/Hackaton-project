@@ -158,8 +158,6 @@ function getEenDag()
     }
 }
 
-<<<<<<< HEAD
-=======
 function getAll()
 {
 
@@ -183,7 +181,6 @@ function getAll()
         echo "0 results";
     }
 }
->>>>>>> 701a605610ba182aad691e060bebf5a7a98c3449
 function addPlayer()
 {
     $mysqli = db_connect();
@@ -205,16 +202,16 @@ if(isset($_POST['submitPotje'])){
     $spel = $_POST['Spel'];
     $date = $_POST['Datum'];
     $mysqli = db_connect();
-    $data = db_getData("SELECT game_naam FROM game WHERE game_naam = '$spel'");
-    if($data -> num_rows < 1){
-        echo'Game niet gevonden';
-        header('location: ../Spelavond.php');           
-    }else{
-        echo 'Game toegevoegd';
+    //$data = db_getData("SELECT game_naam FROM game WHERE game_naam = '$spel'");
+    //if($data -> num_rows < 1){
+        //echo'Game niet gevonden';
+        //header('location: ../Spelavond.php');           
+    //}else{
+        echo 'Potje toegevoegd';
         $mysqli = db_connect();
-        $mysqli->query("INSERT INTO potje (game_naam, pot_datum) VALUES('$spel, $date')");
+        $mysqli->query("INSERT INTO potje (game_naam, pot_datum) VALUES('$spel', '$date')");
         header('location: ../Spelavond.php');
-    }
+    //}
     
 }
 

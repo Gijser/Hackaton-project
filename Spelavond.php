@@ -11,6 +11,7 @@
 
     </head>
     <body>
+        <section>
         <div>
             <from action="functies/functies.php" method="POST">
                 <div class="inputRow">
@@ -22,9 +23,11 @@
                     <input type="date" name="Datum">
                 </div>
                 <div class="inputRow">
-                				<button class="btn" type="submit" name="submitPotje">Voeg potje toe</button>
-            				</div>
+                	<button class="btn" type="submit" name="submitPotje">Voeg potje toe</button>
+            	</div>
             </from>
+            </div>
+            </section>
             <form action="functies/functies.php" method="POST">
                 <div class="inputRow">
                     <label for="Speler">Vul spelernaam in:</label>
@@ -34,7 +37,8 @@
                     <input type="submit" name="Voeg_speler_toe">
                 </div>
             </form>
-        </div>
+        
+
         <div class="spelers">
 
                 <?php
