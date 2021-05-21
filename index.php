@@ -127,9 +127,9 @@ require('functies/functies.php');
 							<div class="content">
 								<div class="inner">
 									<h2>ranglijst een spel</h2>
-									<form method="GET" action="ranglijsten.html">
+									<form method="GET" action="ranglijsten.php">
 										<input type="hidden" name="value" value="1Spel">
-										<button type="submit" href="ranglijsten.html">naar lijst</button>
+										<button type="submit" href="ranglijsten.php">naar lijst</button>
 									</form>
 								</div>
 							</div>
@@ -139,9 +139,9 @@ require('functies/functies.php');
 							<div class="content">
 								<div class="inner">
 									<h2>dagelijkse ranglijst</h2>
-									<form method="GET" action="ranglijsten.html">
+									<form method="GET" action="ranglijsten.php">
 										<input type="hidden" name="value" value="dagLijst">
-										<button type="submit" href="ranglijsten.html">naar lijst</button>
+										<button type="submit" href="ranglijsten.php">naar lijst</button>
 									</form>
 								</div>
 							</div>
@@ -151,9 +151,9 @@ require('functies/functies.php');
 							<div class="content">
 								<div class="inner">
 									<h2>algemeene ranglijst</h2>
-									<form method="GET" action="ranglijsten.html">
+									<form method="GET" action="ranglijsten.php">
 										<input type="hidden" name="value" value="algemeenLijst">
-										<button type="submit" href="ranglijsten.html">naar lijst</button>
+										<button type="submit" href="ranglijsten.php">naar lijst</button>
 									</form>
 								</div>
 							</div>
