@@ -99,7 +99,24 @@ require('functies/functies.php');
 				</div>
 			</section>
 		</section>
-			
+		<section id = "addPlayer" class="wrapper style1 fade-up">
+			<div class="inner">
+			<h2>Voeg niewe player toe</h2>
+				<div class="split style1">
+					<section>
+						<form method="post" action="functies/functies.php">
+							<div class="inputRow">
+                				<input type="text" name="addPlayer">
+            				</div>
+							<div class="inputRow">
+                				<button class="btn" type="submit" name="submitPlayer">Voeg player toe</button>
+            				</div>
+						</form>
+					</section>
+				</div>
+			</div>
+
+		</section>
 
 		<!-- Three -->
 		<section id="three" class="wrapper style1 fade-up">
