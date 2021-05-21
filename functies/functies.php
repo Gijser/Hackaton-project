@@ -191,3 +191,9 @@ if (isset($_POST['submitPlayer'])) {
     $mysqli->query("INSERT INTO speler (speler_naam) VALUES('$naam')");
     header('location: ../index.php');
 }
+if(isset($_POST['submitGame'])){
+    $naam = $_POST['addGame'];
+    $mysqli = db_connect();
+    $mysqli->query("INSERT INTO game (game_naam) VALUES('$naam')");
+    header('location: ../index.php');
+}
