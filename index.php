@@ -54,7 +54,7 @@ require('functies/functies.php');
 		<!-- Leaderboard -->
 
 		<?php
-		leaderboard();
+		getTopTen();
 		?>
 	
 
@@ -79,7 +79,7 @@ require('functies/functies.php');
 						<h2>dagelijkse ranglijst</h2>
 						<section>
 						<form method="GET" action="ranglijsten.php">
-							<input id="date-time-text" type="date" name="datum">
+							<input id="date-time-text" type="date-l" name="datum">
 							<input type="hidden" value="dagLijst" name="value">
 							<button id="submit" type="submit" href="ranglijsten.php">een spel</button>
 						</form>
@@ -115,7 +115,23 @@ require('functies/functies.php');
 					</section>
 				</div>
 			</div>
-
+		</section>
+		<section id = "addPlayer" class="wrapper style1 fade-up">
+			<div class="inner">
+			<h2>Voeg niewe game toe</h2>
+				<div class="split style1">
+					<section>
+						<form method="post" action="functies/functies.php">
+							<div class="inputRow">
+                				<input type="text" name="addGame">
+            				</div>
+							<div class="inputRow">
+                				<button class="btn" type="submit" name="submitGame">Voeg game toe</button>
+            				</div>
+						</form>
+					</section>
+				</div>
+			</div>
 		</section>
 
 		<!-- Three -->
