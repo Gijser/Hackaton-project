@@ -69,8 +69,9 @@ function getEenSpel()
         $query2 = "SELECT pot_id, game_naam, speler_naam, speler_aantal_punten, pot_datum FROM potje, speler 
     WHERE pot_id = '$aantal'
     ORDER BY speler_aantal_punten DESC AND pot_datum DESC";
-
-        $aantal++;
+    
+    $aantal++;
+    break;
     };
 
     $sql2 = mysqli_query($conn, $query2);
@@ -169,7 +170,7 @@ function getAll()
 
     $query = "SELECT pot_id, game_naam, speler_naam, speler_aantal_punten, pot_datum FROM potje, speler 
     WHERE pot_id = '$aantal'
-    ORDER BY speler_aantal_punten DESC AND pot_datum DESC";
+    ORDER BY speler_aantal_punten DESC, pot_datum DESC";
 
     $sql = mysqli_query($conn, $query);
 
