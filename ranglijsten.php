@@ -1,3 +1,7 @@
+<?php 
+	require("functies/functies.php");
+?>
+
 <!DOCTYPE HTML>
 <!--
 	Hyperspace by HTML5 UP
@@ -48,28 +52,14 @@
 						<div class="inner">
 							<table>
 								<?php 
+
+
 									if($_GET["value"] == "1Spel"){
-										while($sql->num_rows > 0)
-										echo "
-									<th>
-										<tr>
-	
-										</tr>
-									</th>";
+										getEenSpel();
 									}elseif($_GET["value"] == "dagLijst"){
-										echo "
-									<th>
-										<tr>
-	
-										</tr>
-									</th>";
+										getEenDag();
 									}elseif($_GET["value"] == "algemeenLijst"){
-										echo "
-									<th>
-										<tr>
-	
-										</tr>
-									</th>";
+										getAll();
 									}
 								?>
 								

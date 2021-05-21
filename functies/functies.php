@@ -45,4 +45,67 @@ function getTopTen(){
     }
 }
 
+function getEenSpel(){
+    $dbhost = "localhost";
+    $dbuser = "root";
+    $dbpass = "";
+    $db = "lanparty";
+    
+    $conn = mysqli_connect($dbhost, $dbuser, $dbpass, $db);
+
+    $query = "";
+
+    $sql = mysqli_query($conn, $query);
+
+    while($sql->num_rows > 0)
+		echo "
+		<th>
+			<tr>
+	
+			</tr>
+		</th>";
+}
+
+function getEenDag(){
+    $dbhost = "localhost";
+    $dbuser = "root";
+    $dbpass = "";
+    $db = "lanparty";
+    
+    $conn = mysqli_connect($dbhost, $dbuser, $dbpass, $db);
+
+    $query = "";
+
+    $sql = mysqli_query($conn, $query);
+
+    while($sql->num_rows > 0)
+        echo "
+        <th>
+            <tr>
+
+            </tr>
+        </th>";
+}
+
+function getAll(){
+    $dbhost = "localhost";
+    $dbuser = "root";
+    $dbpass = "";
+    $db = "lanparty";
+    
+    $conn = mysqli_connect($dbhost, $dbuser, $dbpass, $db);
+
+    $query = "";
+
+    $sql = mysqli_query($conn, $query);
+
+    while($sql->num_rows > 0)
+    echo "
+    <th>
+        <tr>
+
+        </tr>
+    </th>";
+}
+
 
